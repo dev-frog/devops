@@ -7,6 +7,5 @@
 ## Setup script
 
 ```bash
-curl -sL https://raw.githubusercontent.com/DevOpsHackathon/devops-hackathon/master/setup.sh | bash
+curl -sL https://raw.githubusercontent.com/dev-frog/devops/main/setup.sh | bash
 ```
-
