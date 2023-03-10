@@ -9,3 +9,8 @@
 ```bash
 curl -sL https://raw.githubusercontent.com/dev-frog/devops/main/setup.sh | bash
 ```
+
+## Help Notes
+
+1. [ChatGPT](https://platform.openai.com/playground)
+2. [MY_NOTE](https://excalidraw.com/#room=eff7242f557ed65800ff,0aIRoiK_G6h-XH14AQ0jfg)
