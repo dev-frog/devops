@@ -76,3 +76,13 @@ docker_user() {
     exec su -l $USER
 }
 
+
+# execute functions
+check_distro
+check_root
+my_tools
+gpakosz_tmux
+spacevim
+docker_install
+docker_user
+
