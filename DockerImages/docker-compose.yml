@@ -1,0 +1,38 @@
+# write a react component
+version: '3.8'
+
+services:
+  web:
+    image: node:14.15.4-alpine3.12
+    working_dir: /app
+    volumes:
+      - .:/app
+    ports:
+      - 3000:3000
+
+  db:
+    image: postgres:12.4-alpine
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+    ports:
+      - 5432:5432
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  redis:
+    image: redis:6.0.9-alpine
+    ports:
+      - 6379:6379
+
+  maildev:
+    image: djfarrelly/maildev
+    ports:
+      - 1080:80
+      - 1025:25
+      
