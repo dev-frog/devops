@@ -47,16 +47,9 @@ my_tools() {
 ## install tmux gpakosz
 gpakosz_tmux() {
     echo -e "\n $GREEN 📦 Installing gpakosz tmux $RESET \n"
-    cd
     git clone https://github.com/gpakosz/.tmux.git
     ln -s -f .tmux/.tmux.conf
     cp .tmux/.tmux.conf.local .
-    echo -e "\n $GREEN 📦 Done $RESET \n"
-}
-
-spacevim() {
-    echo -e "\n $GREEN 📦 Installing SpaceVim $RESET \n"
-    curl -sLf https://spacevim.org/install.sh | bash
     echo -e "\n $GREEN 📦 Done $RESET \n"
 }
 
@@ -77,12 +70,19 @@ docker_user() {
 }
 
 
+spacevim() {
+    echo -e "\n $GREEN 📦 Installing SpaceVim $RESET \n"
+    curl -sLf https://spacevim.org/install.sh | bash
+    echo -e "\n $GREEN 📦 Done $RESET \n"
+}
+
+
 # execute functions
 check_distro
 check_root
 my_tools
-gpakosz_tmux
-spacevim
 docker_install
-docker_user
+# docker_user
 
+# gpakosz_tmux
+spacevim
